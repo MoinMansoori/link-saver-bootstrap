@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+      <span class="fs-4 px-2">Link Saver</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="oldLinks.html" class="nav-link">Old Links</a></li>
+    </ul>
+  </header>
+  <div class="container my-4">
+    <div class="form-floating">
+      <textarea class="form-control search" placeholder="Paste Here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Paste Links Here</label>
+    </div>
+    <!-- <div class="input-group mb-3">
+      <span class="input-group-text">https://</span>
+      <div class="form-floating">
+        <input type="text" class="form-control search" id="floatingInputGroup1" placeholder="Paste Links Here">
+        <label for="floatingInputGroup1">Paste Links Here</label>
+      </div> -->
+    </div>
+    <div class="container d-flex justify-content-center ">
+      <button type="button" class="btn btn-outline-primary mx-1" id="saveBtn">Save Link</button>
+      <button type="button" class="btn btn-outline-danger mx-1" id="deleteBtn">Delete</button>
+      <button type="button" class="btn btn-outline-secondary mx-1" id="saveTab">Save Tab</button>
+
+    </div>
+  </div>
+  <!-- <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="www.google.com" target="_blank">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul> -->
+  <div class="container">
+    <div class="list-group my-4 " id="linkList">
+      <!-- <a href="#" class="list-group-item list-group-item-action">
+        The current link item
+      </a>
+      <a href="www.google.com" class="list-group-item list-group-item-action ">A second link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+      <a href="#" class="list-group-item list-group-item-action">A fourth link item</a> -->
+    </div>
+  </div>
+  <p id="paraElement"></p>
+  <script src="javascript/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
